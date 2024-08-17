@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Página home');
 })
 
 app.get('/cadastro/:nome/:sobrenome/:idade', (req, res) => {
