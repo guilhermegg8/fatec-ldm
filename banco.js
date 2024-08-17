@@ -51,7 +51,7 @@ sequelize.sync().then(() => {
             bairro: 'São Miguel Paulista',
             cep: '08010-000',
             telefone: '112248-1389',
-            celular: ''
+            celular: '11967216766'
         },
         {
             nome: 'Ana',
