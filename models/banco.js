@@ -1,41 +1,17 @@
-/*const { Sequelize } = require('sequelize');
+const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize('dbfatec', 'root', '', {
     host: 'localhost',
     dialect: 'mysql'
 });
 
-
-sequelize.authenticate().then(function(){
-    console.log('Conectado com sucesso!')
-}).catch(function(erro){
-    console.log('Falha ao se conectar com o banco de dados: ' + erro)
-}) 
+module.exports = {
+    Sequelize: Sequelize,
+    sequelize: sequelize
+};
 
 
-const Cliente = sequelize.define('clientes', {
-    nome: {
-        type: Sequelize.STRING
-    },
-    endereco: {
-        type: Sequelize.STRING
-    },
-    bairro: {
-        type: Sequelize.STRING
-    },
-    cep: {
-        type: Sequelize.STRING
-    },
-    telefone: {
-        type: Sequelize.STRING
-    },
-    celular: {
-        type: Sequelize.STRING
-    }
-});
-
-
-sequelize.sync().then(() => {
+/* sequelize.sync().then(() => {
     return Cliente.bulkCreate([
         {
             nome: 'Guilherme',
@@ -66,4 +42,4 @@ sequelize.sync().then(() => {
     console.log('Clientes cadastrados com sucesso!');
 }).catch(err => {
     console.error('Erro ao cadastrar clientes:', err);
-});*/
+}); */

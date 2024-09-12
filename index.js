@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
@@ -13,4 +13,4 @@ app.get('/cadastro/:nome/:sobrenome/:idade', (req, res) => {
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
-    });
+    });*/
