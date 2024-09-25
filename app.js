@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const handlebars = require("express-handlebars").engine;
 const bodyParser = require("body-parser");
-const Agendamentos = require("./models/post"); // Verifique se o modelo está correto.
+const Agendamentos = require("./models/post");
 
 app.engine("handlebars", handlebars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
